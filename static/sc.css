@@ -1,0 +1,46 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333; /* Цвет заголовка */
+}
+
+form {
+    margin-bottom: 20px; /* Расстояние между формой и списком пользователей */
+}
+
+input[type="text"] {
+    padding: 5px; /* Внутренний отступ для текстового поля */
+}
+
+input[type="submit"] {
+    padding: 5px 10px; /* Внутренний отступ для кнопки */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    border: none; /* Убираем границу кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+ul {
+    list-style: none; /* Убираем маркеры у списка */
+    padding: 0; /* Убираем внутренний отступ у списка */
+}
+
+li {
+    margin-bottom: 10px; /* Расстояние между элементами списка */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: #8b3ed3; /* Цвет ссылки */
+}
+
+a:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}

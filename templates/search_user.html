@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'sc.css'%}">
+    <title>Поиск пользователей</title>
+</head>
+<body>
+    
+    <h1>Поиск пользователей</h1>
+
+    <form method="get">
+        <input type="text" name="q" value="{{ request.GET.q }}">
+        <input type="submit" value="Искать">
+    </form>
+
+    <ul>
+        {% for user in users %}
+            <li>
+                {{ user.username }}
+                <a href="{% url 'send_message' user.id %}">Написать сообщение</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

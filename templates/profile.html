@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'profile.css'%}">
+    <title>Профиль</title>
+  </head>
+  <body>
+    <h2>Редактировать профиль</h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Сохранить изменения</button>
+    </form>
+  </body>
+</html>
